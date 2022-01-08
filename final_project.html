@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Restaurant in Highbury & Islington, London"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      My Top 3 independent restaurants in Highbury & Islington in 2021
+    </title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #7d51e8;
+        font-family: monospace;
+      }
+
+      h2 {
+        text-align: center;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+        font-family: Courier;
+        color: #ffffff;
+        background: #7d51e8;
+      }
+
+      ul {
+        display: block;
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+        text-align: center;
+        font-family: courier;
+        padding: 10px 0;
+        margin: 0 auto;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 14 px;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #7d51e8;
+        color: white;
+        font-size: 18px;
+        font-family: courier;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px rgba(255, 255, 255, 1);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(248, 219, 219) 0%,
+          rgb(229, 248, 250) 90%
+        );
+        border-radius: 20px;
+      }
+
+      .website {
+        color: #7d51e8;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      .website:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        🏆 My top 3 restaurants 🍽️
+        <br />
+        in Highbury & Islington
+      </h1>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/013/879/original/Patron.jpg?1627231241"
+        alt="Patron Cave à Manger in Highbury"
+      />
+      <ul>
+        <li>
+          <h2>🇫🇷 Patron Cave à Manger</h2>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/013/827/original/sea_bream.jpg?1627209006"
+            alt="Sea Bream in Patron Cave a Manger in Highbury"
+          />
+          <p>
+            A Parisian style corner bistro serving classic comfort French food.
+            Recommend: 🍸French Martini, 🥣Fish soup, 🐟Whole Sea Bream.
+          </p>
+
+          📍158a Blackstock Rd, London N5 1HA <br /><br />
+          <a
+            href="https://www.patronlondon.com/highbury"
+            target="_blank"
+            class="website"
+          >
+            Official Website
+          </a>
+        </li>
+        <li>
+          <h2>Beam Cafe</h2>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/013/829/original/beam_cafe.jpg?1627209290"
+            alt="Beam Cafe in Highbury"
+          />
+          <p>
+            Lovely atmosphere, a perfect place for brunch with friends and
+            family. The dishes are inspired by the middle east. <br />
+          </p>
+
+          📍184 Blackstock Rd, London N5 1EF <br /><br /><a
+            href="https://www.cafebeam.co.uk/"
+            target="_blank"
+            class="website"
+          >
+            Official Website
+          </a>
+        </li>
+        <li>
+          <h2>🇲🇾 Sambal Shiok Laksa Bar</h2>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/013/828/original/laksa.jpg?1627209131"
+            alt="SamBal Shiok Laksa Bar in Holloway Road"
+          />
+          <p>Traditional Malaysia rice noodles with creamy soup.</p>
+
+          📍171 Holloway Rd, London N7 8LX<br /><br />
+          <a
+            href="https://www.sambalshiok.co.uk/"
+            target="_blank"
+            class="website"
+          >
+            Official Website
+          </a>
+        </li>
+      </ul>
+      <button class="subscribe-button">📮 Subscribe newsletter</button>
+      <p class="footer">This page was built by Fung-ping Wong</p>
+    </div>
+    <script>
+      function subscribe() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert("Thank you, " + name + "!");
+      }
+
+      let subscribeButton = document.querySelector(".subscribe-button");
+      subscribeButton.addEventListener("click", subscribe);
+    </script>
+  </body>
+</html>
